@@ -1,0 +1,67 @@
+.link {
+    text-decoration: none;
+    color: teal;
+}
+*{
+    margin: 10px;
+}
+div{
+    background: #E5E5E5;
+}
+.header{
+    text-align: center;
+    font-size: 50px;
+}
+
+.attendee-div, .talk-div{
+    p{
+        font-size: 25px;
+    }
+
+    input{
+        width: 400px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 3px;
+    }
+
+    .button{
+        background: gray;
+        border-radius: 40px;
+    }
+}
+
+.talk-div{
+    font-size: 20px;
+}
+
+.joint-div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.talklist-div > h2, .attendlist-div > h2, .assignedlist-div > h2{
+    margin: 25px 25px 25px 60px;
+}
+
+.attendlist-div  p{
+    font-size:18px;
+}
+
+select{
+    display: block;
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.assign-page{
+    .button{
+        background: gray;
+        border-radius: 40px;
+        height: 30px;
+        width: 400px;
+    }
+}
