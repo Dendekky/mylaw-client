@@ -51,7 +51,7 @@ export default function AttendeeForm(props) {
       category: request.category
     };
 
-    Axios.post(`/api/attendee/add`, data)
+    Axios.post(`https://mylaw-talks.herokuapp.com/api/attendee/add`, data)
       .then((res) => {
         if (res.data.status === 201) {
           setSubmit(true)

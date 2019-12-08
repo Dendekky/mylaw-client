@@ -26,7 +26,7 @@ export default function AssignedTalks (props) {
     React.useEffect(() => {
     const fetchData = async () => {
     const result = await Axios(
-      '/api/assigned/talks',
+      'https://mylaw-talks.herokuapp.com/api/assigned/talks',
     );
     setData(result.data);
     };
@@ -35,7 +35,7 @@ export default function AssignedTalks (props) {
 
     const onDelete = (id) => {
 
-        fetch('/api/assignedtalk/delete/' + id, {
+        fetch('https://mylaw-talks.herokuapp.com/api/assignedtalk/delete/' + id, {
             method: 'POST',
           })
           alert('Deleted, this page will reload now')

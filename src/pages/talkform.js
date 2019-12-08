@@ -52,7 +52,7 @@ export default function TalkForm(props) {
     };
     console.log(data)
 
-    Axios.post(`/api/talk/add`, data)
+    Axios.post(`https://mylaw-talks.herokuapp.com/api/talk/add`, data)
       .then((res) => {
         if (res.data.status === 201) {
           setSubmit(true)

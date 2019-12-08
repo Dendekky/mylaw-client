@@ -54,7 +54,7 @@ export default function AssignedTalkForm () {
         console.log(data)
 
         try {
-        const res = await Axios.post(`/api/talk/assign`, data)
+        const res = await Axios.post(`https://mylaw-talks.herokuapp.com/api/talk/assign`, data)
             if (res.data.status === 201) {
             setSubmit(true)
             } else if (res.data.status === 406) {
