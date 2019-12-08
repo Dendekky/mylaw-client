@@ -54,7 +54,7 @@ export default function AssignedTalkForm () {
         console.log(data)
 
         try {
-        const res = await Axios.post(`https://mylaw-talks.herokuapp.com/api/talk/assign`, data)
+        const res = await Axios.post(`https://conf-mylaw.herokuapp.com/api/talk/assign`, data)
             if (res.data.status === 201) {
             setSubmit(true)
             } else if (res.data.status === 406) {
@@ -71,11 +71,11 @@ export default function AssignedTalkForm () {
     React.useEffect(() => {
     const fetchData = async () => {
       const talkResult = await Axios(
-        'https://mylaw-talks.herokuapp.com/api/talks',
+        'https://conf-mylaw.herokuapp.com/api/talks',
       );
       setTalks(talkResult.data);
       const attendeeResult = await Axios(
-        'https://mylaw-talks.herokuapp.com/api/attendees',
+        'https://conf-mylaw.herokuapp.com/api/attendees',
       );
       setAttendees(attendeeResult.data);
     };
