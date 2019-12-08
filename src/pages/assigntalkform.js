@@ -71,11 +71,11 @@ export default function AssignedTalkForm () {
     React.useEffect(() => {
     const fetchData = async () => {
       const talkResult = await Axios(
-        '/api/talks',
+        '/https://mylaw-talks.herokuapp.com/api/talks',
       );
       setTalks(talkResult.data);
       const attendeeResult = await Axios(
-        '/api/attendees',
+        '/https://mylaw-talks.herokuapp.com/api/attendees',
       );
       setAttendees(attendeeResult.data);
     };
