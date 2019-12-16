@@ -26,7 +26,7 @@ export default function AllAttendees (props) {
     React.useEffect(() => {
     const fetchData = async () => {
     const result = await Axios(
-      'https://mylaw-talks.herokuapp.com/api/attendees',
+      'https://conf-mylaw.herokuapp.com/api/attendees',
     );
     setData(result.data);
     };
@@ -35,7 +35,7 @@ export default function AllAttendees (props) {
 
     const onDelete = (id) => {
 
-        fetch('https://mylaw-talks.herokuapp.com/api/attendee/delete/' + id, {
+        fetch('https://conf-mylaw.herokuapp.com/api/attendee/delete/' + id, {
             method: 'POST',
           })
           alert('Invitation revoked, this page will reload now')
